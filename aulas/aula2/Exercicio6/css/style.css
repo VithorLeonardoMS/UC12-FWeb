@@ -1,15 +1,70 @@
-#title{
-    text-align: center;
-    font-size: 300%;
-    background-size: 500%;
-    background-color: red;
-    color: white;
+
+html{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
 }
 
-#subtitulo{
-    text-align: center;
-    font-size: 300%;
-    background-size: 500%;
-    background-color: black;
-    color: white;
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
 }
+
+#Cabecalho{
+    background-color: red;
+    display: flex;         
+    align-items: center;    
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+
+#Principal{
+    background-color: black;
+    width: 100%;
+    height: 70%;
+}
+
+#Rodape{
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    display: flex;         
+    text-align: left;
+    padding-left: 1vh;
+    padding-top: 0.1vh;
+}
+
+#Vermelho{
+    color: white;
+    text-align: center;
+    font-size: 9vh;
+    margin: 0px;
+}
+
+#Preto{
+    color: white;
+    display: flex;         
+    align-items: center;    
+    text-align: left;
+    padding-left: 6vh;
+    padding-top: 1.8vh;
+    font-size: 6vh;
+    margin: 0px;
+}
+
+#Branco{
+    color: black;
+    margin: 0px;
+
+}
+
+#TextoPrincipal{
+    color: white;
+    padding-left: 6vh;
+    padding-top: 1vh;
+}
+
+
+
