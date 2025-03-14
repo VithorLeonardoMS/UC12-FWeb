@@ -1,0 +1,21 @@
+A energia hidrelétrica é uma das fontes de energia renovável mais utilizadas no mundo. Ela é gerada a partir da força da água em movimento, geralmente aproveitando rios e reservatórios para produzir eletricidade de maneira contínua e sustentável.
+
+🌊 Como Funciona?
+O processo de geração de energia hidrelétrica ocorre em usinas hidrelétricas, que possuem três componentes principais:
+
+Reservatório – Armazena grandes quantidades de água, geralmente criadas por barragens.
+Turbinas – A água armazenada é liberada e sua força faz as turbinas girarem.
+Gerador – Conectado às turbinas, transforma a energia mecânica em eletricidade, que é enviada para redes de distribuição.
+Quanto maior o volume de água e a altura da queda d’água, maior a energia gerada.
+
+✅ Vantagens da Energia Hidrelétrica
+✔ Renovável e limpa – A água usada não se esgota e não há queima de combustíveis fósseis, reduzindo emissões de poluentes.
+✔ Baixo custo operacional – Após a construção, os custos de manutenção são relativamente baixos.
+✔ Fornecimento contínuo – Diferente da energia solar e eólica, pode operar de forma estável 24h por dia.
+
+❌ Desvantagens da Energia Hidrelétrica
+⚠ Impacto ambiental – A construção de barragens pode causar desmatamento, deslocamento de populações e alterações nos ecossistemas aquáticos.
+⚠ Dependência das chuvas – Em períodos de seca, a produção pode ser reduzida.
+⚠ Custo inicial elevado – Construir uma usina hidrelétrica exige um investimento muito alto.
+
+A energia hidrelétrica é amplamente utilizada no Brasil, que possui grande potencial hídrico. Mesmo com seus desafios, continua sendo uma das formas mais eficientes e sustentáveis de geração de eletricidade.
