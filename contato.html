@@ -13,69 +13,117 @@
         }
 
         #Cabecalho{
-            background-color:chocolate;
+            background-color:black;
             width: 100%;
             height: 8vh;
             text-align: left;
             padding-left: 7vh;
-            padding-top: 3vh;
-            font-size:5vh;
-            font-family: Arial, Helvetica, sans-serif;
-            
+            padding-top: 2.8vh;
+            font-size:6vh;
+            font-family:Arial, Helvetica, sans-serif;
+            color:white;
         }
 
         .container{
             display: flex;
             margin: 3% 10% 0 10%;
             border: 1px solid black;
-
+            background-color: gainsboro;
         }
 
-        #DivWhatsapp{
+        .contatos{
             display: flex;
             align-items: center;
             margin: 0;
-        }
-
-        #whatsappLogo{
-            width: 35px;
         }
 
         #ImagemVithor{
-            width: 170px;
+            width: 40vh;
             margin: 2vh;
+            border-radius: 100%;
+            
         }
 
-        #numeroWhatsapp{
-            margin: 1vh;
+        #conteudo{
+            margin-top: 2vh;
         }
 
-        #DivEmail{
-            display: flex;
-            align-items: center;
+        #MeuNome{
+            margin-bottom: 0;
+        }
+        /*
+        #whatsapp{
             margin: 0;
+            margin-left: 1vh;
         }
 
+        #email{
+            margin: 0;
+            margin-left: 1vh;
+        }
+        
+        #github{
+            margin: 0;
+            margin-left: 1vh;
+        }
+        */
+
+        .contato{
+            margin: 0;
+            margin-left: 10px;
+            margin-top: 8px;
+        }
+        .link{
+            color: black;
+        }
+
+        .link:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /*
         #iconeEmail{
-            width: 30px;
-            margin-right: 2vh;
+            width: 35px;
         }
 
+        #iconeWhatsapp{
+            width: 35px;
+        }
+        
+        #iconeGithub{
+            width: 35px;
+        }
+        */
+
+        .icone{
+            width: 27px;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
     <div id="Cabecalho">Contatos </div>
     <div id="Perfil" class = "container">
         <img id="ImagemVithor" src="./img/fotoVithor.png" alt="Foto de Vithor">
-        <div>
-            <h1>Vithor Leonardo Mello Soares</h1>
-            <div id="DivWhatsapp">
-                <img id = "whatsappLogo"  src="./img/whatsapp.png" alt="logo do whatsapp">
-                <h2 id="numeroWhatsapp">51 98612-7359</h2>
+        <div id = "conteudo">
+            <h1 id="MeuNome">Vithor Leonardo Mello Soares</h1>
+            <hr width = "500vh" size = "2" color="black">
+            <div id="DivWhatsapp" class="contatos">
+                <img id = "iconeWhatsapp" class="icone" src="./img/whatsapp.png" alt="Logo do whatsapp">
+                <h3 id="whatsapp" class="contato">51 98612-7359</h3>
             </div>
-            <div id = "DivEmail">
-                <img id = iconeEmail src="./img/gmail.png" alt="icone do email">
-                <h2>vithorleonardomellosoares@gmail.com</h2>
+            <div id = "DivEmail" class="contatos">
+                <img id = "iconeEmail" class="icone" src="./img/gmail.png" alt="Icone do email">
+                <h3 id = "email" class="contato">vithorleonardomellosoares@gmail.com</h3>
+            </div>
+            <div id = "DivGitHub" class="contatos">
+                <img id = "iconeGithub" class="icone" src="./img/github.png" alt="Icone do github">
+                <a class="link" href="https://github.com/VithorLeonardoMS"><h3 id = "github" class="contato">https://github.com/VithorLeonardoMS</h3></a>
+            </div>
+            <div id = "DivLinkedIn" class="contatos">
+                <img class="icone" src="./img/linkedin.png" alt="Icone do Linkedin">
+                <a class = "link" href=""><h3 id = "github" class="contato">https://linkDoMeuLinkedIn </h3></a>
             </div>
         </div>
     </div>
