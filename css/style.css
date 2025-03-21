@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(229, 229, 229);
+}
+
+ul{
+    display:flex;
+    margin-left: 1%;
+}
+
+li{
+    list-style: none;
+    margin: 0 1% 0.2% 0;
+}
+
+.container{
+    background-color:rgb(175, 175, 175);
+    width: 100%;
+    border: 2px solid gray;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+.menu-opcoes{
+    
+}
+
+#logoSenac{
+    height: 40px;
+    width: auto;
+    margin: 1% 0 1% 1%;
+}

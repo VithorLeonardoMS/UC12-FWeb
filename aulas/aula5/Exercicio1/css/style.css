@@ -1,0 +1,63 @@
+
+*{
+    padding: 4px;
+    margin: 0;
+}
+
+div h1{
+    font-family:'SedgwickAve',cursive;
+}
+
+div p{
+    font-family:'SedgwickAve',cursive; 
+}
+
+img{
+    width: auto;
+    height: 50vh;
+}
+
+table tr th,td{
+    border-bottom: 1px solid black;
+}
+
+table th{
+    text-justify: right;
+}
+
+#textLeft{
+    padding: 0px 12px 25px;
+}
+
+table{
+
+}
+
+#titleLeft{
+    color: yellow;
+    padding: 3vh 1vh 0vh;
+    justify-self: center;
+}
+
+#divLeft{
+    float: left;
+    background-color: tomato;
+    width: 49%;
+    height: 85%;
+    margin: 0px;
+}
+
+#divRight{
+    float: Right;
+    width: 49%;
+    height: 85%;
+    margin: 0px;
+}
+
+#footer{
+    clear: both;
+    text-align: center;
+    width: 100%;
+    height: 15%;
+    padding: 0;
+}
