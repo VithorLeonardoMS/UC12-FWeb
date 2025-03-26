@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: bisque;
+    height: 100vh;
+    width: 100vh;
+}
+
+.dpainel{
+    background-color: darkgreen;
+    height: 400px;
+    width: 800px;
+    
+}
+
+#personagem{
+    width: 60px;
+    height: auto;
+}
