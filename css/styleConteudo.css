@@ -8,6 +8,7 @@ body{
     height: 100%;
     width: 100%;
     background-color: rgb(229, 229, 229);
+    margin: 0;
 }
 
 header ul{
@@ -60,13 +61,6 @@ header li{
 
 }
 
-.menu-conteudo a {
-    color: darkgray;
-}
-.busca{
-    
-
-}
 #cabecalho{
     border: 2px solid gray;
     border-left: none;

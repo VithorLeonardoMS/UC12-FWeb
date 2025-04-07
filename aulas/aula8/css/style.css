@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    background-color: bisque;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: end;
+    flex-direction: row;
+    justify-content:flex-start;
+    justify-items: start;
+    align-items: start;
+}
+
+.NomeCientífico{
+    font-size:small;
+    font-style: italic;
+}
+
+.item img{
+    width:35vh;
+    height: auto;
+}
+
+    .item{
+        width: 35vh;
+        height: 55vh;
+        padding: 1%;
+        margin: 1%;
+        background-color: white;
+        display: block;
+        border: 1px gray solid;
+    }
