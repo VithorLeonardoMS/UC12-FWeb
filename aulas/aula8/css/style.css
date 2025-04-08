@@ -28,7 +28,7 @@ span div{
 span{
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
    
 }
 
@@ -36,6 +36,9 @@ hr{
     border-color: black;
     border-radius: 1px;
 }
+
+
+
 .NomeCientífico{
     font-size:small;
     font-style: italic;
@@ -81,7 +84,7 @@ hr{
 
 .nivel{
     height: 18px;
-    width: 28px;
+    width: 25px;
     border: 1px black solid;
     display: flex;
 }
@@ -100,4 +103,19 @@ hr{
 
 .verde{
     background-color: green;
+}
+
+.cinza{
+    background-color: gray;
+}
+.linha-simples{
+    display: flex;
+    justify-items: start;
+    align-items: center;
+}
+img.icon{
+    width:auto;
+    height: 16px;
+    margin-left: 4px;
+    margin-top: 4px;
 }

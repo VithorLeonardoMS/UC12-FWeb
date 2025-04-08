@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: blue;
+    height: 40vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 10px solid rgb(6, 0, 166);
+    margin-bottom: 2vh;
+}
+
+#cabecalho{
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.raquete{
+    height: 18vh;
+    width:  auto;
+    margin: 0.5%;
+}
+
+#raqueteInvertida{
+    transform: scaleX(-1);
+}
+
+#bolinha{
+    height: 4vh;
+    width:  auto;
+    margin-top: 2vh ;
+}
+
+#rede{
+    height: 18vh;
+    width:  auto;
+    margin: 0.5%;
+}
+
+#divLeft{
+    height: 100%;
+    width: 50%;
+    border-right: 2vh solid rgb(148, 148, 148);
+}
+
+div p{
+    margin: 10px;
+}
+
+div ul{
+    margin: 30px;
+}
+
+div h1{
+    margin: 10px;
+    justify-self: center;
+}
+
+#divRight{
+    height: 100%;
+    width: 50%;
+}
+
+#imagens{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagem{
+    height: 30vh;
+    width: auto;
+}
