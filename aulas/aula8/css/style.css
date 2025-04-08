@@ -10,7 +10,7 @@ body{
 
 main{
     display: flex;
-    background-color: bisque;
+    background-color: rgb(193, 255, 234);
     height: 100%;
     width: 100%;
     flex-wrap: wrap;
@@ -21,6 +21,21 @@ main{
     align-items: start;
 }
 
+span div{
+    display: flex;
+}
+
+span{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+   
+}
+
+hr{
+    border-color: black;
+    border-radius: 1px;
+}
 .NomeCientífico{
     font-size:small;
     font-style: italic;
@@ -34,9 +49,55 @@ main{
     .item{
         width: 35vh;
         height: 55vh;
-        padding: 1%;
+        padding: 0.8%;
         margin: 1%;
         background-color: white;
         display: block;
-        border: 1px gray solid;
+        border: 10px rgb(180, 180, 180) solid;
     }
+
+.operaria{
+    background-color: lightyellow;
+}
+
+.rainha{
+    background-color:rgb(252, 252, 194);
+    border-color: rgb(250, 111, 56);
+}
+
+.solitaria{
+    background-color: lightyellow;
+    border-color: black;
+}
+
+.mel{
+    background-color: rgb(214, 186, 157);
+}
+
+.discos{
+    background-color: rgb(214, 186, 157);
+    border-color: black;
+}
+
+.nivel{
+    height: 18px;
+    width: 28px;
+    border: 1px black solid;
+    display: flex;
+}
+
+.vermelho{
+    background-color: rgb(255, 73, 73);
+}
+
+.amarelo{
+    background-color: yellow;
+}
+
+.azul{
+    background-color: rgb(0, 102, 255);
+}
+
+.verde{
+    background-color: green;
+}
