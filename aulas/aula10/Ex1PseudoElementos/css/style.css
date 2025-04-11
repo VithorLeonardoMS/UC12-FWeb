@@ -1,0 +1,47 @@
+
+li:first-child{
+    color: red;
+}
+li:last-child{
+    color: blue;
+}
+ li:nth-child(4){
+    color:chocolate;
+ }
+
+ li:hover{
+    background-color: lightgreen;
+ }
+
+ a:visited{
+    color: red;
+ }
+
+ a:active{
+    color: black;
+ }
+ p::first-letter{
+    color: red;
+    font-size: 200%;
+ }
+
+ p::first-line{
+    font-style: italic;
+ }
+
+ a::before{
+    content: "<";
+ }
+
+ a::after{
+    content: ">";
+ }
+
+ p{
+   text-shadow: 8px -10px 2px red;
+ }
+
+ #texto{
+   opacity: 0.3;
+   background-color: rgb(148, 0, 164);
+ }

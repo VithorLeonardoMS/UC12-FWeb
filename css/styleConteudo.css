@@ -1,4 +1,9 @@
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
 html{
     height: 100%;
     width: 100%;
@@ -11,6 +16,7 @@ body{
     margin: 0;
 }
 
+
 header ul{
     list-style: georgian;
 }
@@ -20,24 +26,93 @@ header li{
     
 }
 
-.container{
+footer{
+    background-color: aquamarine;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+}
+
+
+footer a[href*="github"] {
+    background-image: url("../img/github.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    display: block;
+
+}
+
+footer a[href*="linkedin"] {
+    background-image: url("../img/linkedin.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    display: block;
+
+}
+
+footer a[href*="instagram"] {
+    background-image: url("../img/instagram.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    display: block;
+
+}
+
+footer li{
+    display: inline-block;
+    width: 30px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    list-style: circle;
+    width: auto;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    list-style: circle;
+    width: auto;
+}
+
+.container{
     background-color: rgb(200, 202, 255);
+    width: 100%;
+}
+
+.menu-conteudo{
+    margin-left: 2%;
+    margin-top: 1%;
+    padding-left: 2%;
+}
+
+.menu-conteudo li{
+    margin-bottom: 1px;
+    padding: 5px 10px;
+
+}
+
+.menu-conteudo li ul{
+    display: none;
+}
+
+.menu-conteudo li:hover ul{
+    display: block;
+}
+
+.menu-conteudo ul ul li{
+    background-color: #dcdcdc;
 }
 
 .formatLiHeader{
     list-style: none;
     margin: 0 1% 0.2% 0;
-}
-
-.menu-opcoes{
-    
-}
-
-.menu-conteudo{
-    
 }
 
 .busca,.menu-conteudo{
@@ -55,11 +130,13 @@ header li{
     
 }
 
-.menu-conteudo li{
-    margin-bottom: 1px;
-    padding: 5px 10px;
-
+.social {
+    justify-self: end;
+    align-self: flex-start;
+    margin: 0;
 }
+
+
 
 #cabecalho{
     border: 2px solid gray;

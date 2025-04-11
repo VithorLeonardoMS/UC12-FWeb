@@ -85,6 +85,11 @@ li {
     margin-left: 2%;
     margin-top: 1%;
 }
+.menu-conteudo li{
+    margin-bottom: 1px;
+    padding: 5px 10px;
+
+}
 
 .formatLiHeader {
     list-style: none;
@@ -112,10 +117,6 @@ ul li.item a{
     font-size: 4vh;
 }
 
-
-
-.destaques{
-}
 
 #cabecalho {
     border: 2px solid gray;
