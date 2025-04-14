@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body,main{
+    height: 100%;
+    width: 100%;
+}
+
+main div{
+    width: 80%;
+    height: 20%;
+    background-color: rgb(54, 54, 54);
+}
+
+main div:first-of-type{
+    background: linear-gradient(45deg ,blue,red);
+}
+
+main div:last-of-type{
+    background: linear-gradient(to top ,rgb(0, 255, 98),rgb(0, 42, 255));
+    
+}
+
+main div:first-of-type + div{
+    background: linear-gradient(45deg ,rgb(0, 255, 38),rgb(167, 250, 244));
+}
+
+main div:nth-of-type(2):hover h3{
+    transition: top 50s, color 3s ease;
+    color: rgb(255, 0, 0);
+    
+}
+
