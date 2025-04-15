@@ -159,3 +159,15 @@ li {
 #destaques{
 
 }
+
+input[src*="lupa.png"]{
+    height: 3.4vh;
+    font-weight: auto;
+}
+
+#form-busca{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+

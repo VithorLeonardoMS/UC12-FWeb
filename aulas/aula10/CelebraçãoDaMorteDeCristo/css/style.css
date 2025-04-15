@@ -36,8 +36,7 @@ main{
     background-color: white;
     height: 100%;
     width: 50%;
-    /*background: linear-gradient(to right,rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.075) 75%, rgba(255, 255, 255, 0) 100%);*/
-    background-color: aqua;
+    background: linear-gradient(to right,rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.075) 75%, rgba(255, 255, 255, 0) 100%);
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -54,9 +53,11 @@ main{
     border: none;
     color: white;
     font-size:large;
+    transition: top 50s, color 3s ease;
 }
 
 
 #introducao div button:hover{
     background-color: #504d7c;
+    transform: scale(1.08);
 }
