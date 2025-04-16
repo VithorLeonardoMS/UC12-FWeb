@@ -12,5 +12,5 @@ function mostraTexto(texto){
     alert(texto);
 }
 
-titulo.onclick = mostraAlerta();
+titulo.onclick = mostraAlerta;
 mostraTexto(text);
