@@ -1,31 +1,47 @@
-let textValue = "";
+let textValue = [];
 let input = document.querySelector("#inputText");
 
 function updateText(){
-    input.value = textValue;
+    input.value = textValue.join;
 }
 
 function addNumber(number){
-    textValue += number;
+    textValue.push(number);
     updateText();
 }
 
 function addOperator(operator){
-    textValue += operator;
+    textValue[textValue.length -1] = textValue[textValue.length -1] + operator;
     updateText();
 }
 
 function addDecimal(){
-    textValue += ','
+    textValue[textValue.length -1] = textValue[textValue.length -1] + ",";
     updateText();
 }
 
 function clearText(){
-    textValue = "";
+    textValue = [];
     updateText();
 }
 
-function calculate(){
-    textValue = eval(textValue);//Transforma texto em operação, retornando o resultado
+function deleteCaractere(){
+    textValue[textValue.length -1] = textValue[textValue.length -1].slice(0,-1);
     updateText();
 }
+
+function validarCalculo(text){
+    text
+}
+
+function calculate(){
+    if(validarCalculo()){
+        textValue = eval(textValue);//Transforma texto em operação, retornando o resultado
+        updateText();
+    } else{
+        textValue = "Erro em validarCalculo()";
+        updateText()
+    }
+    
+}
+

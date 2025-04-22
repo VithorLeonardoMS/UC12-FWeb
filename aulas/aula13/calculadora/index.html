@@ -3,38 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <main>
-        <input type="text" id="inputText">
-        <div id="botoes">
-            <button>?</button>
-            <button>?</button>
-            <button >?</button>
-            <button onclick="clearText()">C</button>
-            <button onclick="addOperator('/')">/</button>
+        <div id="calculadora">
+            
+            <input type="text" id="inputText">
+            <div id="botoes">
+                <button onclick="addOperator('^')">^</button>
+                <button onclick="addOperator('√')">√</button>
+                <button onclick="addNumber('π')">π</button>
+                <button onclick="deleteCaractere()">⌫</button>
+                
+                
+                <button onclick="addNumber(7)">7</button>
+                <button onclick="addNumber(8)">8</button>
+                <button onclick="addNumber(9)">9</button>
+                <button onclick="addOperator('*')">x</button>
 
-            <button onclick="addNumber(7)">7</button>
-            <button onclick="addNumber(8)">8</button>
-            <button onclick="addNumber(9)">9</button>
-            <button onclick="addOperator('*')">x</button>
+                <button onclick="addNumber(4)">4</button>
+                <button onclick="addNumber(5)">5</button>
+                <button onclick="addNumber(6)">6</button>
+                <button onclick="addOperator('-')">-</button>
 
-            <button onclick="addNumber(4)">4</button>
-            <button onclick="addNumber(5)">5</button>
-            <button onclick="addNumber(6)">6</button>
-            <button onclick="addOperator('-')">-</button>
+                <button onclick="addNumber(1)">1</button>
+                <button onclick="addNumber(2)">2</button>
+                <button onclick="addNumber(3)">3</button>
+                <button onclick="addOperator('+')">+</button>
 
-            <button onclick="addNumber(1)">1</button>
-            <button onclick="addNumber(2)">2</button>
-            <button onclick="addNumber(3)">3</button>
-            <button onclick="addOperator('+')">+</button>
-
-            <button>,</button>
-            <button>0</button>
-            <button ><img src="" alt="delete"></button>
-            <button onclick="calculate()">=</button>
+                <button onclick="addDecimal('.')" >,</button>
+                <button onclick="addNumber('0')">0</button>
+                <button onclick="addOperator('%')">%</button>
+                <button onclick="addOperator('/')">/</button>
+                
+                <button onclick="clearText()">C</button>
+                <button onclick="calculate()">=</button>
+                
+            </div>
         </div>
     </main>
     <script src="./js/script.js"></script>
