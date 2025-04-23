@@ -22,11 +22,38 @@ body {
   z-index: 10;
 }
 
+.carousel-inner{
+  
+}
+.carousel-inner::before{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/variedadeDeCubosMagicos.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  filter: blur(4px);
+}
+
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
+  background-repeat: no-repeat;
 }
 
+#item1{
+  background-image: url(../img/campeonato1.webp);
+  background-size: 80%;
+  background-position: center;
+}
+
+#item2{
+  background-image: url(../img/celebroTreinando.webp);
+  background-position: center;
+  background-size: 77.2%;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */

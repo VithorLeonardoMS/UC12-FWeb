@@ -31,7 +31,7 @@ function deleteCaractere(){
 }
 
 function validarCalculo(text){
-    text
+    return true;//implementar
 }
 
 function calculate(){
