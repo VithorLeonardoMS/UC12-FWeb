@@ -1,60 +1,108 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-header{
-    margin: 0;
-}
-
-body{
+* {
+  margin: 0px;
   padding: 0px;
 }
 
-#myCarousel{
-    height: 100%;
+header {
+  margin: 0;
+}
+
+body {
+  padding: 0px;
+}
+
+#myCarousel {
+  height: 100%;
 }
 
 .form-control-dark {
-    border-color: var(--bs-gray);
-  }
-  .form-control-dark:focus {
-    border-color: #fff;
-    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
-  }
-  
-  .text-small {
-    font-size: 85%;
-  }
-  
-  .dropdown-toggle:not(:focus) {
-    outline: 0;
-  }
-  
-  header.p-3.mb-3.border-bottom{
-    margin:0;
-  }
+  border-color: var(--bs-gray);
+}
 
-  .col-md-5{
-    margin-bottom: 15px;
-  }
-  
-  div.row.featurette{
-    background-color: lightgray;
-    width: 100%;
-    padding: 15px;
-    padding-top: 30px;
-    border-radius: 4px;
-  }
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
 
-.img-cubo{
-    width: 430px;
-    height: 430px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 3px rgb(84, 84, 84);
-  }
+.text-small {
+  font-size: 85%;
+}
 
-  #img-YihengWang{
-    height: auto;
-    width: 400px;
-  }
+.dropdown-toggle:not(:focus) {
+  outline: 0;
+}
+
+header.p-3.mb-3.border-bottom {
+  margin: 0;
+}
+
+.col-md-5 {
+  margin-bottom: 15px;
+}
+
+div.row.featurette {
+  background-color: lightgray;
+  width: 100%;
+  padding: 15px;
+  padding-top: 30px;
+  border-radius: 4px;
+}
+
+.img-cubo {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgb(84, 84, 84);
+}
+
+.img-recordista {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgb(84, 84, 84);
+  height: auto;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+#h2-recordistaPyraminx{
+  margin-top: 8%;
+}
+
+#img-homemCubo {
+  padding: 3%;
+  border-radius: 100%;
+}
+
+#h2-recordista2X2{
+  margin-top: 2.5%;
+}
+
+#p-recordistaPyraminx {
+  margin-bottom: 2.19%;
+}
+
+.p-contrastante {
+  font-family: 'Nunito', sans-serif;
+}
+
+div.col-md-7 .featurette-heading.fw-normal.lh-1 {
+  margin-top: 10%;
+}
+
+div.col-md-7.order-md-2 {
+  padding: 0 3%;
+}
+
+div.col-md-7.order-md-2 .p-contrastante {
+  margin-bottom: 7.15%;
+}
+
+div.col-md-7.order-md-2 .featurette-heading.fw-normal.lh-1 {
+  margin-top: 0.2%;
+}
+
+
+div.col-md-12 .featurette-heading.fw-normal.lh-1 {
+  margin-top: 0%;
+}
