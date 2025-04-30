@@ -1,0 +1,65 @@
+
+        body{
+            background-color: beige;
+            margin: 0;
+            padding: 0%;
+        }
+
+        #Cabecalho{
+            background-color:black;
+            width: 100%;
+            height: 8vh;
+            text-align: left;
+            padding-left: 7vh;
+            padding-top: 2.8vh;
+            font-size:6vh;
+            font-family:Arial, Helvetica, sans-serif;
+            color:white;
+        }
+
+        .container{
+            display: flex;
+            margin: 3% 10% 0 10%;
+            border: 1px solid black;
+            background-color: gainsboro;
+        }
+
+        .contatos{
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+
+        #ImagemVithor{
+            width: 40vh;
+            margin: 2vh;
+            border-radius: 100%;
+            
+        }
+
+        #conteudo{
+            margin-top: 2vh;
+        }
+
+        #MeuNome{
+            margin-bottom: 0;
+        }
+
+        .contato{
+            margin: 0;
+            margin-left: 10px;
+            margin-top: 8px;
+        }
+        .link{
+            color: black;
+        }
+
+        .link:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+        
+        .icone{
+            width: 27px;
+            margin-top: 5px;
+        }

@@ -1,0 +1,42 @@
+#cabecalho {
+    border: 2px solid gray;
+    border-left: none;
+    border-right: none;
+    background-color: rgb(175, 175, 175);
+    padding-bottom: 0.4%;
+}
+
+#ulHeader {
+    display: flex;
+    margin-left: 2%;
+    width: 200px;
+}
+
+#ulHeader li{
+    margin-right: 5%;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    list-style: circle;
+    width: auto;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    list-style: circle;
+    width: auto;
+}
+
+.formatLiHeader {
+    list-style: none;
+    margin: 0 1% 0.2% 0;
+}
+
+#logoSenac {
+    height: 40px;
+    width: auto;
+    margin: 1% 0 1% 1%;
+}
