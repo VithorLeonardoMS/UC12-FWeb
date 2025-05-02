@@ -1,0 +1,1 @@
+$("#fundo360").naturalWidth(10)

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, main{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: rgb(190, 194, 255);
+    height: 100%;
+    width: 2000px;
+}
+main{
+    height: 100%;
+    width: 2000px;
+    padding-top: 17vh;
+    padding-bottom: 10vh;
+}
+
+    /*Modificações no header*/
+    header{
+        position: fixed;
+    }
+
+
+#fundo360{
+    height: 50%;
+    width: 100%;
+}
+
+#fundo360 > div{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(190, 194, 255);
+}
+
+.parallax-window {
+    min-width: 2000px;
+    min-height: 72vh;
+    background: transparent;
+}
+
+.container-2{
+    height: auto;
+    width: 100%;
+}
+
+.container-2 h1{ 
+    padding: 1%;
+    padding-bottom: 0.5%;
+}
+
+.container-2 P{
+    padding: 1%;
+    padding-top: 0;
+}

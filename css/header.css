@@ -1,9 +1,11 @@
 #cabecalho {
+    width: 100%;
     border: 2px solid gray;
     border-left: none;
     border-right: none;
     background-color: rgb(175, 175, 175);
     padding-bottom: 0.4%;
+    height: min-content;
 }
 
 #ulHeader {
@@ -40,3 +42,9 @@ li {
     width: auto;
     margin: 1% 0 1% 1%;
 }
+
+/*
+main{
+    padding-top: 20%;
+}
+*/
