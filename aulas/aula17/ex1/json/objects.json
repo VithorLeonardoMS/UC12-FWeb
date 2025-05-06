@@ -1,0 +1,57 @@
+{
+    "objects":[
+        "Bola",
+        "Pirulito",
+        "Caneta",
+        "Faca",
+        "Espelho",
+        "Botão",
+        "Mesa",
+        "Cadeira",
+        "Chinelo",
+        "Nootebook"
+    ],
+
+    "pessoas" : [
+        "Guilherme",
+        "Cleber",
+        "Menezes",
+        "Vithor",
+        "Vinicius",
+        "Thiago"
+    ],
+
+    "automoveis":[
+        "Carro",
+        "Avião",
+        "Helicóptero",
+        "Trem",
+        "Moto"
+    ],
+
+    "animais":[
+        "Cavalo",
+        "Capivara",
+        "Humano",
+        "Veado",
+        "Burro",
+        "Jegue"
+    ],
+
+    "verbos":[
+        "Comer",
+        "Pegar",
+        "Subir",
+        "Querer",
+        "Correr",
+        "Acidentar",
+        "Treinar",
+        "Ir",
+        "Lamber",
+        "Chutar",
+        "Usar",
+        "Apertar",
+        "Fechar"
+    ]
+
+}

@@ -25,11 +25,11 @@ li{
 
 #trocar{
     color: white;
-    background-color: black;
+    background-color: rgb(31, 31, 31);
     font-size: xx-large;
     padding: 0.5%;
 }
 
 #trocar:hover{
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(53, 53, 53);
 }

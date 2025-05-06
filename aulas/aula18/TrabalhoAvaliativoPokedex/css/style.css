@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    padding: 0 5%;
+    background-color: rgb(255, 255, 88);
+}
+
+#pokedex{
+    height: 100vh;
+    width: auto;
+}
+
+#pokedex img{
+    height: 100%;
+    width: auto;
+}

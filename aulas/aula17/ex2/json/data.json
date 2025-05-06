@@ -1,0 +1,31 @@
+{
+    "pessoas" : [
+        {
+            "nome": "Fulano",
+            "idade": 30,
+            "local": {
+                "cidade": "Porto Alegre",
+                "UF": "Rio Grande do Sul",
+                "Pais": "Brasil"
+            }
+        },
+        {
+            "nome": "Beltrano",
+            "idade": 32,
+            "local": {
+                "cidade": "São Leopoldo",
+                "UF": "Rio Grande do Sul",
+                "Pais": "Brasil"
+            }
+        },
+        {
+            "nome": "Ciclano",
+            "idade": 55,
+            "local": {
+                "cidade": "Alegrete",
+                "UF": "Rio Grande do Sul",
+                "Pais": "Brasil"
+            }
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "Teatro":[
+        "João","Maria","Romeu", "Julieta"
+    ],
+
+    "Matematica":[
+        "Pitágoras", "Arquimedes", "Fibonacci"
+    ],
+
+    "Ed. Fisica":[
+        "Neymar", "Maradona", "Pelé"
+    ],
+
+    "Literatura":[
+        "William Shakespeare"," Clarice Lispector", "Machado de Assis"
+    ],
+
+    "Artes":[
+        "Michael Jackson", "Vincent van Gogh", "Leonardo da Vinci"
+    ],
+
+    "Português":[
+        "Cleber","Menezes","Guilherme"
+    ]
+}
