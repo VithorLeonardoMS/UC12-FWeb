@@ -2,17 +2,102 @@
     padding: 0;
     margin: 0;
 }
-main{
-    padding: 0 5%;
-    background-color: rgb(255, 255, 88);
-}
-
-#pokedex{
-    height: 100vh;
-    width: auto;
-}
-
-#pokedex img{
+body, main{
     height: 100%;
+    width: 100%;
+    background-color: rgba(250,218,119,255);
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+
+#figPokedex{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+#container{
+    padding: 1% 3%;
+    justify-self: center;
+}
+
+img{
+    height: 94vh;
     width: auto;
+}
+
+#imagemPoke{
+    position: absolute;
+    top: 34%;
+    left: 45.5%;
+}
+
+#fotoPoke{
+    height: 90px;
+    width: auto;
+}
+
+#form{
+    position: absolute;
+    top: 53%;
+    left:42.5%;
+}
+
+#idNomePokemon{
+    position: absolute;
+    top: 61.6%;
+    left:42.5%;
+}
+
+#botoes{
+    position: absolute;
+    top: 83%;
+    left:39%;
+    display: flex;
+    justify-content: space-between;
+    width: 19.5%;
+}
+
+#botoes button{
+    height: 8.1vh;
+    width: 8.1vh;
+    background-color: gb(232,228,228);
+}
+
+img[src="./img/arrow.png"]{
+    height: 5.8vh;
+    width: auto;
+}
+
+.espelhada {
+    transform: scaleX(-1);
+  }
+
+#informacoes1{
+    position: absolute;
+    top: 65.1%;
+    left:42.5%;
+}
+
+#idNomePokemon span{
+    font-size: large;
+}
+
+#informacoes1 span{
+    font-size: large;
+}
+
+#informacoes2{
+    position: absolute;
+    top: 68.9%;
+    left:42.5%;
+}
+
+#inputForm{
+    position: absolute;
+    top: 55%;
+    left: 42.5%;
 }
