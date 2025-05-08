@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./img/backgroundPokemon.webp">
+    <link rel="stylesheet" href="./img/gamePlay.avif">
 </head>
 <body>
     <main>
@@ -16,27 +18,33 @@
                 <img id="fotoPoke" src="" alt="Imagem do pokemon">
             </figure>
             <form action="" id="formPoke">
-                <input id="inputForm" type="text">
+                <input id="inputForm" type="text" class="alinhamentoX">
             </form>
-            <div id="idNomePokemon">
-                <span id="idPokemon"> ID</span>
-                <span id="nomePokemon"> Nome do Pokemon</span>
-            </div>
-            <div id="informacoes1"> 
-                <span id="tipo1">Tipo 1</span>
-                <span id="tipo2">Tipo 2</span>
-            </div>
-
-            <div id="informacoes2">
-                <div id="habilidade">Habilidade</div>
-                <div id="peso">Peso</div>
-                <div id="altura">Altura</div>
+            <div id="todas-Informacoes" class="alinhamentoX">
+                <div id="idNomePokemon">
+                    <span id="idPokemon"> ID</span>
+                    <span id="nomePokemon"> Nome do Pokemon</span>
+                </div>
+                <div id="informacoes1"> 
+                    <span id="tipo1">Tipo 1</span>
+                    <span id="tipo2">Tipo 2</span>
+                </div>
+    
+                <div id="informacoes2">
+                    <div id="habilidade">Habilidade</div>
+                    <div id="peso">Peso</div>
+                    <div id="altura">Altura</div>
+                </div>
             </div>
             <div id="botoes"> 
                 <button id="btnVoltar"><img src="./img/arrow.png" alt=""></button>
                 <button id="btnProximo"><img class="espelhada" src="./img/arrow.png" alt=""></button>
             </div>
         </div>
+        <audio id="audioFundo" autoplay loop>
+            <source id="" src="./audio/PokémonSong.mp3" type="audio/mp3">
+            Seu navegador não suporta o formato de áudio.
+          </audio>
     </main>
     <script src="./js/script.js"></script>
 </body>
