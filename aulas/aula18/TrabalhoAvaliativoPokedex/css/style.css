@@ -32,7 +32,7 @@ main{
 }
 
 img{
-    height: 94vh;
+    height: 94%;
     width: auto;
 }
 
@@ -49,16 +49,16 @@ img{
 
 #form{
     position: absolute;
-    top: 53%;
+    top: 57%;
 }
 
 #botoes{
     position: absolute;
-    top: 75.8%;
-    left:20%;
+    top: 81.6%;
+    left:16%;
     display: flex;
     justify-content: space-between;
-    width: 53.5%;
+    width: 60.3%;
 }
 
 #botoes button{
@@ -80,11 +80,11 @@ img[src="./img/arrow.png"]{
 
 .espelhada {
     transform: scaleX(-1);
-  }
+}
 
 .alinhamentoX{
     position: absolute;
-    left: 29.6%;
+    left: 28.5%;
 }
 
 #todas-Informacoes{
@@ -94,7 +94,7 @@ img[src="./img/arrow.png"]{
     margin: 0;
     background-color: rgba(127, 255, 212, 0.192);
     position: absolute;
-    top: 55.5%;
+    top: 59.5%;
     width: 159px;
 }
 
@@ -131,10 +131,14 @@ img[src="./img/arrow.png"]{
 
 #inputForm{
     position: absolute;
-    top: 49%;
+    top: 52%;
+    font-size: large;
+    width: 35.3%;
 }
 
 #info-Botoes{
+    display: grid;
+    grid-template-columns: 21px auto;
     background-color: rgba(228, 228, 228, 0.934);
     box-shadow: 1px 1px 1px 1px rgba(66,60,66,255);
     margin-top: 3%;
@@ -149,6 +153,13 @@ img[src="./img/arrow.png"]{
     width: 30px;
 }
 
+#info-Botoes button{
+    padding: 1.5%;
+    height: 21px;
+    width: 21px;
+}
+
 #info-Botoes h4{
     height: min-content;
+    padding-left: 2.5%;
 }
