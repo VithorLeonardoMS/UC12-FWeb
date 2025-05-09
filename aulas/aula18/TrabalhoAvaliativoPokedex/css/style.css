@@ -42,10 +42,12 @@ img{
     left: 40.5%;
 }
 
-/**/
+/*102*/
 #fotoPoke{
-    height: 80px;
+    min-height: 63px;
+    max-height: 115px;
     width: auto;
+    max-width: 135px;
 }
 
 #form{
@@ -118,10 +120,21 @@ img[src="./img/arrow.png"]{
     margin-top: 2.5%;
     background-color: rgba(222,222,222,255);
     box-shadow: 1px 1px 1px 1px rgba(66,60,66,255);
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
 }
 
-#informacoes1 span{
+#informacoes1 img{
     font-size: large;
+    height: 25px;
+    width: auto;
+    margin-right: 1%;
+}
+
+#informacoes1 div{
+    font-size: large;
+    margin-right: 2%;
 }
 
 #informacoes2{

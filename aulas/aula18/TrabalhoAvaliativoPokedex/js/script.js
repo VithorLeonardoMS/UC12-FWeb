@@ -12,23 +12,27 @@ let inputPoke = document.querySelector("#inputPoke")
 
 let inputF = document.querySelector("#inputForm");
 
-let tipo1Poke = document.querySelector("#tipo1")
+let iconTipo1Poke = document.querySelector("#tipo1");
 
-let tipo2Poke = document.querySelector("#tipo2")
+let iconTipo2Poke = document.querySelector("#tipo2");
 
-let habilidade = document.querySelector("#habilidade")
+let tipo1Poke = document.querySelector("#divTipo1");
 
-let pesoPoke = document.querySelector("#peso")
+let tipo2Poke = document.querySelector("#divTipo2");
 
-let altura = document.querySelector("#altura")
+let habilidade = document.querySelector("#habilidade");
 
-let back = document.querySelector("#btnVoltar")
+let pesoPoke = document.querySelector("#peso");
 
-let next = document.querySelector("#btnProximo")
+let altura = document.querySelector("#altura");
 
-let btn1 = document.querySelector("#btn1");
+let back = document.querySelector("#btnVoltar");
 
-let btn2 = document.querySelector("#btn2");
+let next = document.querySelector("#btnProximo");
+
+let btnA = document.querySelector("#btnA");
+
+let btnD = document.querySelector("#btnD");
 
 let btnQ = document.querySelector("#btnQ");
 
@@ -115,7 +119,7 @@ const tocarSom2 = async(pokemon) => {
  */
 const shine = async(pokemon) => {
     const dataPokemon = await fetchPokemon(pokemon);
-    defineImagemPokemon(dataPokemon.sprites.other.showdown.front_shiny,dataPokemon.sprites.front_shiny)
+    defineImagemPokemon(dataPokemon.sprites.other.showdown.front_shiny,dataPokemon.sprites.front_shiny,"./img/nada.png")
 };
 
 /**
@@ -124,7 +128,7 @@ const shine = async(pokemon) => {
  */
 const formaBasica = async(pokemon) => {
     const dataPokemon = await fetchPokemon(pokemon);
-    defineImagemPokemon(dataPokemon.sprites.other.showdown.front_default,dataPokemon.sprites.front_default);
+    defineImagemPokemon(dataPokemon.sprites.other.showdown.front_default,dataPokemon.sprites.front_default,"./img/nada.png");
 };
 
 /* ----------------Botões-----------------*/
@@ -137,11 +141,11 @@ next.addEventListener("click", (event) => {
     aumentarNumPokedex();
 });
 
-btn1.addEventListener("click", (event) => {
+btnA.addEventListener("click", (event) => {
     tocarSom1(numeroPokedex);
 });
 
-btn2.addEventListener("click", (event) => {
+btnD.addEventListener("click", (event) => {
     tocarSom2(numeroPokedex);
 });
 
@@ -165,10 +169,10 @@ btnNext.addEventListener("click", (event) => {
 
 document.addEventListener('keydown', function(event) {
     switch(event.key) {
-        case '1':
+        case 'a':
             tocarSom1(numeroPokedex);
             break;
-        case '2':
+        case 'd':
             tocarSom2(numeroPokedex);
             break;
         case "ArrowLeft":
@@ -196,10 +200,14 @@ const fetchPokemon = async(pokemon) => {
 
 const showPokemon = async(pokemon) => {
     const dataPokemon = await fetchPokemon(pokemon);
-    defineImagemPokemon(dataPokemon.sprites.other.showdown.front_default,dataPokemon.sprites.front_default);
+    defineImagemPokemon(dataPokemon.sprites.other.showdown.front_default,dataPokemon.sprites.front_default, "./img/nada.png");
     nomePoke.innerHTML = dataPokemon.name;
     inputF.value = dataPokemon.id;
-    tipo1Poke.innerHTML = dataPokemon.types[0].type.name + " | ";
+    iconTipo1Poke.alt = dataPokemon.types[0].type.name;
+    iconTipo2Poke.alt = dataPokemon.types[1].type.name;
+    iconTipo1Poke.src = "./img/" + dataPokemon.types[0].type.name + ".png";
+    iconTipo2Poke.src = "./img/" + dataPokemon.types[1].type.name + ".png";
+    tipo1Poke.innerHTML = dataPokemon.types[0].type.name;
     tipo2Poke.innerHTML = dataPokemon.types[1].type.name;
     habilidade.innerHTML = dataPokemon.abilities[0].ability.name;
     pesoPoke.innerHTML = (dataPokemon.weight / 10).toFixed(2) + " kg";
@@ -209,8 +217,19 @@ const showPokemon = async(pokemon) => {
 
 formPoke.addEventListener("submit", (event) => {
     event.preventDefault();
-    numeroPokedex = parseInt(inputF.value)
+    numeroPokedex = parseInt(inputF.value);
     showPokemon(inputF.value.toLowerCase());
+});
+
+
+iconTipo1Poke.addEventListener("error", function handler() {
+    this.src = "./img/nada.png";
+    this.onerror = null;
+});
+
+iconTipo2Poke.addEventListener("error", function handler() {
+    this.src = "./img/nada.png";
+    this.onerror = null;
 });
 
 ImageBitmapRenderingContext;
