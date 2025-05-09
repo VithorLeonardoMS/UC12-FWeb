@@ -50,10 +50,16 @@ li {
     padding: 5px 10px;
 
 }  
+ul#itens{
+}
+
+ul li.item{
+}
 
 ul li.item a{
     text-decoration: none;
     font-size: 4vh;
+    color: blue;
 }
 
 ul li.item a:hover{
@@ -71,24 +77,11 @@ ul li.item a:hover h6{
 ul li.item a p{
     font-size: 0px;
     color: black;
-    width: 30%;
+    width: 40%;
 }
 
 ul li.item a h6{
     color: black;
     font-size: 0px;
-    width: 30%;
-}
-
-#cabecalho {
-    border: 2px solid gray;
-    border-left: none;
-    border-right: none;
-    background-color: rgb(175, 175, 175);
-}
-
-#logoSenac {
-    height: 40px;
-    width: auto;
-    margin: 1% 0 1% 1%;
+    width: 40%;
 }
