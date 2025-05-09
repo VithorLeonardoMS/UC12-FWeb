@@ -42,6 +42,7 @@ function defineImagemPokemon(url1, url2){
 
 function tocarSom(som){
     som = new Audio(som);
+    som.volume = 0.4
     som.play();
 }
 
