@@ -1,5 +1,7 @@
 let imgPokemon = document.querySelector("#fotoPoke");
 
+let figurePokemon = document.querySelector("#imagemPoke")
+
 let idPoke = document.querySelector("#idPokemon")
 
 let nomePoke = document.querySelector("#nomePokemon")
