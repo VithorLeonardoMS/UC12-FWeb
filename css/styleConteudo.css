@@ -16,30 +16,20 @@ body{
     margin: 0;
 }
 
-
-header ul{
-    list-style: georgian;
-}
-
-header li{
-    list-style:georgian;
-    
-}
-
-.container{
-    background-color: rgb(200, 202, 255);
-    width: 100%;
+main {
+    padding: 10px;
+    background-color: rgb(229, 229, 229);
 }
 
 .menu-conteudo{
-    margin-left: 2%;
-    margin-top: 1%;
-    padding-left: 2%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(84, 84, 84);
 }
 
 .menu-conteudo li{
     margin-bottom: 1px;
     padding: 5px 10px;
+    list-style: none;
 
 }
 
@@ -53,11 +43,6 @@ header li{
 
 .menu-conteudo ul ul li{
     background-color: #dcdcdc;
-}
-
-.formatLiHeader{
-    list-style: none;
-    margin: 0 1% 0.2% 0;
 }
 
 .busca,.menu-conteudo{
@@ -75,24 +60,6 @@ header li{
     
 }
 
-#cabecalho{
-    border: 2px solid gray;
-    border-left: none;
-    border-right: none;
-    background-color:rgb(175, 175, 175);
-}
-
-#ulHeader{
-    display:flex;
-    margin-left: 1%;
-}
-
-#logoSenac{
-    height: 40px;
-    width: auto;
-    margin: 1% 0 1% 1%;
-}
-
 #destaques{
 
 }
@@ -100,6 +67,11 @@ header li{
 input[src*="lupa.png"]{
     height: 3.4vh;
     font-weight: auto;
+}
+
+.busca{
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(84, 84, 84);
 }
 
 #form-busca{

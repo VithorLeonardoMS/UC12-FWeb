@@ -22,52 +22,8 @@ main {
     height: 100%;
 }
 
-/*
-
-
-#ulHeader {
-    display: inline-block;
-    margin-left: 1%;
-}
-
-#logoSenac {
-    height: 40px;
-    width: auto;
-    margin: 1% 0 1% 1%;
-}
-
-
-ul {
-    display: block;
-    list-style-type: disc;
-    list-style: circle;
-    width: auto;
-}
-
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-    list-style: circle;
-    width: auto;
-}
-*/
-
-.destaques > h1{
-    padding: 1%;
-}
-
-h3{
-    font-size: larger;
-}
-
-
-.container {
-    width: 100%;
-}
-
-.formatLiHeader {
-    list-style: none;
-    margin: 0 1% 0.2% 0;
+h2{
+    padding: 5px;
 }
 
 .destaques{
@@ -75,6 +31,7 @@ h3{
 }
 
 .destaques > h1{
+    padding: 1%;
     margin: 0.5%;
     font-size:xx-large;
     justify-self: center;
@@ -119,6 +76,7 @@ section.painel.aulas ol li:hover{
 }
 
 section.painel.aulas a{
+    
 }
 
 .img-aula{
