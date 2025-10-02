@@ -21,16 +21,32 @@ main {
     background-color: rgb(229, 229, 229);
 }
 
+.busca,.menu-conteudo{
+    background-color: white;
+    width: 230px;
+    height: auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    float: left;
+}
+
 .menu-conteudo{
     border-radius: 5px;
     box-shadow: 3px 3px 3px rgb(84, 84, 84);
+    width: 468px;
+}
+.menu-conteudo ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
 }
 
 .menu-conteudo li{
     margin-bottom: 1px;
     padding: 5px 10px;
     list-style: none;
-
+    width: 130px;
 }
 
 .menu-conteudo li ul{
@@ -45,23 +61,10 @@ main {
     background-color: #dcdcdc;
 }
 
-.busca,.menu-conteudo{
-    background-color: white;
-    width: 230px;
-    height: auto;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-right: 10px;
-    float: left;
-}
 
 .busca h2, .busca form, .menu-conteudo h2{
     margin: 10px;
     
-}
-
-#destaques{
-
 }
 
 input[src*="lupa.png"]{

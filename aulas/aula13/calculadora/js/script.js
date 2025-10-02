@@ -1,45 +1,133 @@
-let textValue = [];
+let arrayValue = [];
 let input = document.querySelector("#inputText");
 
 function updateText(){
-    input.value = textValue.join;
+    input.value = arrayValue.join("");
+    console.warn(arrayValue)
+}
+
+/**
+ * Pega valores auxiliares relacionados a arrayValue
+ */
+function catchLastInfos(){
+    const lastIndex = arrayValue ? arrayValue.length -1 : false
+    const lastValue = lastIndex > -1 ? arrayValue[lastIndex] : false
+    const lastChar = lastValue && lastValue[lastValue.length -1]
+    return {lastIndex, lastValue, lastChar}
+}
+
+function catchOperator(){
+    const { lastChar } = catchLastInfos()
+    const operadores = ["+","-","*","/","√", "^"]
+
+    if(operadores.includes(lastChar)){
+        return lastChar
+    }
+    return false
+    
+}
+
+function addChar(char){
+    const { lastIndex, lastValue } = catchLastInfos()
+    if(lastValue){
+        arrayValue[lastIndex] = lastValue.concat(char)
+
+    }
+}
+
+function previousVerification(value = false){
+    let validate = true
+    let lastChar = catchOperator()
+    if(lastChar == "%" ){
+        addOperator("*")
+    }
+    const operadores = ["+","-","*","/","√", "^"]
+
+    if(operadores.includes(lastChar)){
+        validate = false
+    }
+
+    if(value && value == "π" && validate){
+        addOperator("*")
+    }
+    validate = lastChar? lastChar : catchLastInfos().lastChar
+    return validate
 }
 
 function addNumber(number){
-    textValue.push(number);
+    let test = previousVerification(number)
+    console.log(`test: ` + test)
+    console.error(test)
+    number = number.toString()
+    if(number == "π"){
+        number = "3.14159"
+    } else {
+        test = false
+    }
+    if(test == "."){
+        deleteCaractere()
+        addChar("*")
+    }
+    
+    if(catchOperator() || arrayValue.length == 0){
+        arrayValue.push(number)
+    } else{
+        addChar(number)
+    }
     updateText();
+    
 }
 
 function addOperator(operator){
-    textValue[textValue.length -1] = textValue[textValue.length -1] + operator;
-    updateText();
+    const test = previousVerification()
+    if(test != "."){
+        arrayValue[arrayValue.length -1] = arrayValue[arrayValue.length -1] + operator;
+        updateText();
+    }
+    
 }
 
 function addDecimal(){
-    textValue[textValue.length -1] = textValue[textValue.length -1] + ",";
-    updateText();
+    if(previousVerification()){
+        const { lastValue } = catchLastInfos()
+        if(!lastValue.includes(".")){
+            addChar(".")
+        }
+        updateText();
+    }
+    
 }
 
 function clearText(){
-    textValue = [];
+    arrayValue = [];
     updateText();
 }
 
 function deleteCaractere(){
-    textValue[textValue.length -1] = textValue[textValue.length -1].slice(0,-1);
+    const { lastIndex, lastValue } = catchLastInfos()
+    console.warn(arrayValue)
+    arrayValue[lastIndex] = lastValue.slice(0,-1);
+    if(lastValue == ""){
+        arrayValue.pop()
+    }
     updateText();
 }
 
-function validarCalculo(text){
-    return true;//implementar
+function validarCalculo(){
+    arrayValue.forEach((value, i) => {
+        arrayValue[i] = value.replace("%", "/100")
+    })
+    return true; //Ampliando possibilidades
 }
 
 function calculate(){
     if(validarCalculo()){
-        textValue = eval(textValue);//Transforma texto em operação, retornando o resultado
+        const strValue = arrayValue.join("")
+        const result = [eval(strValue)];//Transforma texto em operação, retornando o resultado
+        arrayValue = [result.toString()]
         updateText();
     } else{
-        textValue = "Erro em validarCalculo()";
+        arrayValue = "Erro em validarCalculo()";
         updateText()
     }
     
